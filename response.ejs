@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submission Result</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #e0f7fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    .result-box {
+      background: #fff;
+      padding: 30px;
+      max-width: 500px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .simple-link {
+      display: block;
+      margin-top: 25px;
+      text-decoration: underline;
+      color: #000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Thank You for Submitting!</h1>
+    <p style="font-size: 14px;">We've received your details successfully.</p>
+  </header>
+
+  <div class="result-box">
+    <p>Hello <strong><%= name %></strong>, your form has been submitted successfully.</p>
+    <p><strong>Thanks, <%= name %>!</strong></p>
+    <p>We will verify your details and contact you via <strong><%= email %></strong>.</p>
+
+    <a href="/" class="simple-link">Go back to form</a>
+  </div>
+</body>
+</html>
